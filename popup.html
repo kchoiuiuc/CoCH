@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Automatic Keywords Highlighter</title>
+        <title>Chemicals of Corcern Highlighter</title>
         <script src="popup.js"></script>
+        <link rel="stylesheet" href="common.css"/>
+        <div class="logo">
+            <h2>Chemicals of Concern Highlighter<img src="icons/flask_512.png"></h2>
+        </div>
     </head>
-    <body>
-        <h2>Highlighting</h2>
-        <p><input id="textColor" type="color"/><label for="textColor">Text color</label></p>
-        <p><input id="backgroundColor" type="color"/><label for="backgroundColor">Background color</label></p>
-        <button id="saveButton" type="submit">Save</button><button id="cancelButton" type="reset">Cancel</button>
-        <button id="searchButton">Search</button>
+    <body id="popup">
+        <div class = "row">
+            <div class="column column-popup">
+                <h3>Highlighting</h3>
+                <p>What colors should be used?</p>
+                <div><input id="colorForeground" type="color"/><label for="colorForeground"> Text color</label></div>
+                <div><input id="colorBackground" type="color"/><label for="colorBackground"> Background color</label></div>
+            </div>
+            <div class="column column-popup">
+                <h3>Keywords</h3>
+                <p>Default keywords are retrieved from <a href=http://www.safecosmetics.org/>Safe Cosmetics</a></p>
+                <p>To add or remove keywords, press Edit Keywords</p>       
+            </div>
+        </div>
+        <em>&nbsp;</em>
+        <button id="buttonSave" type="submit">Save Colors</button>
+        <button id="buttonOptions">Edit Keywords</button>
+        <button id="buttonSearch">Search</button>
     </body>
 </html>

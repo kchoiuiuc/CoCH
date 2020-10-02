@@ -1,13 +1,34 @@
-function loadOptions() {
-    if (typeof localStorage != "undefined") {
-        document.getElementById()
-    }
-}
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("searchButton").addEventListener("click", function() {
-        chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, {type:"searchText"});
-            window.close();
-        });
+    loadColors();
+
+    document.getElementById("buttonSearch").addEventListener("click", function() {
+        chrome.runtime.sendMessage({
+            "message": "getChemicals",
+            "remove": true
+        })
+        window.close();
+    });
+
+	document.getElementById("buttonSave").addEventListener("click", function() {
+		saveColors();
+		window.close();
+    });
+
+    document.getElementById("buttonOptions").addEventListener("click", function() {
+        chrome.runtime.openOptionsPage()
     });
 });
+
+function saveColors() {
+	if ("undefined" != typeof localStorage) {
+		localStorage.setItem("foreground", document.getElementById("colorForeground").value);
+        localStorage.setItem("background", document.getElementById("colorBackground").value);
+    }
+}
+
+function loadColors() {
+	if ("undefined" != typeof localStorage) {
+		document.getElementById("colorForeground").value = localStorage.getItem("foreground") || "#000000";
+		document.getElementById("colorBackground").value = localStorage.getItem("background") || "#ffff00";
+	}
+}

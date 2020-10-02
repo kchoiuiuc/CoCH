@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chemicals of Corcern Highlighter</title>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="jquery-linedtextarea.js"></script>
+        <script src="options.js"></script>
+        <link href="jquery-linedtextarea.css" rel="stylesheet">
+        <link rel="stylesheet" href="common.css"/>
+    </head>
+    <body id="options">
+        <div class = "row">
+            <div class="column optionsLeft">
+                <h1>Chemicals of concern</h1>
+                <textarea class="lined coc" id="textareaChemicals"></textarea>
+                <em class="coc">[Chemical, Index], Line-separated</em>
+                <em class="coc">Case sensitive if less than or equal to 3 characters</em>
+            </div>
+            <div class="column">
+                <h1>Link to the related documents</h1>
+                <textarea class="lined links" id="textareaUrls"></textarea>
+                <em class="links">Line number represents index</em></p>
+                <em>&nbsp;</em>
+                <button class="optionsButton" id="buttonCancel" type="reset">Cancel</button>
+                <button class="optionsButton" id="buttonSave" type="submit">Save</button>                
+            </div>
+        </div>
+    </body>
+</html>
