@@ -33,8 +33,3 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		}
 	}
 });
-
-chrome.commands.onCommand.addListener(function(command) {
-	console.log('Command:', command);
-});
-  

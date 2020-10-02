@@ -1,7 +1,7 @@
 {
     "name": "Chemicals of Corcern Highlighter",
     "version": "1.0",
-    "description": "Highlight chemicals in corcern in Makeup and Skincare Products",
+    "description": "Highlight chemicals of corcern in makeup and skincare products",
     "permissions": ["tabs"],
     "browser_action": {
         "default_popup": "popup.html"
@@ -14,15 +14,6 @@
         "128": "icons/flask_128.png",
         "256": "icons/flask_256.png",
         "512": "icons/flask_512.png"
-    },
-    "commands": {
-        "search_chemicals": {
-          "suggested_key": {
-            "default": "Ctrl+Shift+3",
-            "mac": "Command+Shift+3"
-          },
-          "description": "Search chemicals"
-        }
     },
     "content_scripts": [
         {

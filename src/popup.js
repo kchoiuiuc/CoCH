@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         chrome.runtime.sendMessage({
             "message": "getChemicals",
             "remove": true
-        })
+        });
         window.close();
     });
 
