@@ -1,9 +1,10 @@
 # Chemicals of Corcern Highlighter
-
+<img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png" align="right" style="padding-left: 10px" />
+Search ingredients, highlight chemicals of corcern in cosmetics or skin care products and 
 ### Sources
 linedtextarea: https://github.com/cotenoni/jquery-linedtextarea<br>
 icons:  <span>
-            <img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png">Icons made by 
+            Icons made by 
             <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from 
             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         </span><br>
