@@ -2,8 +2,16 @@
 <img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png" align="right" style="padding-left: 10px" />
 Search ingredients, highlight chemicals of concern in cosmetics or skin care products and click the highlighted chemical to see the related document!
 
-### Instruction
+## Instruction
 In order to use, go to a website that shows ingredients of a product, click the extension icon to activate popup and click the search button. If you want to see more information about the chemical of concern, simply click the highlighted chemical to see the related documents on Safe Cometics.
+
+### Screenshots
+<a href="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot1.png?raw=true" target="_blank"><img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot1.png?raw=true" width="200" border="0" /></a>
+&nbsp;
+<a href="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot2.png?raw=true" target="_blank"><img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot2.png?raw=true" width="200" border="0" /></a>
+&nbsp;
+<a href="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot3.png?raw=true" target="_blank"><img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot3.png?raw=true" width="200" border="0" /></a>
+&nbsp;
 
 ### Keywords (chemicals of concern)
 To add or remove keywords (chemicals of concern), click edit keywords button to go to the options page. Keywords are stored as a [keyword, index] pair, and index indicates the line number of url of related documents.
@@ -12,6 +20,8 @@ To add or remove keywords (chemicals of concern), click edit keywords button to 
 To change the font or background (highlight) colors, choose colors that you want on popup and click the save colors button.
 
 ## Installation
+
+Waiting to be listed on google web store
 
 ### Getting the Source Code
 
