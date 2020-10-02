@@ -63,14 +63,18 @@ function keywordsHighlighter(options, remove) {
 	var keywords = options.keywords.split("\n");
 	var indices = [];
 	for (var i=0; i<keywords.length; i++) {
-		if (keywords[i][keywords[i].length-2]==",") {
-			indices.push(parseInt(keywords[i].substring(keywords[i].length-1, keywords[i].length)));
-			keywords[i] = keywords[i].substring(0, keywords[i].length-2);
+		var comma = 0;
+		while (comma < keywords[i].length) {
+			if (keywords[i][keywords[i].length-comma]==",") break;
+			comma++;
 		}
-		else if (keywords[i][keywords[i].length-3]==",") {
-			indices.push(parseInt(keywords[i].substring(keywords[i].length-2, keywords[i].length)));
-			keywords[i] = keywords[i].substring(0, keywords[i].length-3);
+		if (comma == keywords[i].length) {
+			indices.push(null);
+			break;
 		}
+
+		indices.push(parseInt(keywords[i].substring(keywords[i].length-comma+1, keywords[i].length)));
+		keywords[i] = keywords[i].substring(0, keywords[i].length-comma);
 	}
 	var urls = options.urls.split("\n");
 	delete options.keywords;
