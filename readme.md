@@ -57,4 +57,4 @@ To do so, simply visit `chrome://extensions` again and hit *Ctrl+R*.
   </span><br>
 * Default list of chemicals of concern was scraped from <a href=http://www.safecosmetics.org/>Safe Cosmetics</a> using Python Beautiful Soup and Selenium Chromedriver<br>
 * Based on an earlier chrome extension named
-*Automatic Keywords Highlighter*(https://github.com/wrzlbrmft/chrome-keywords-highlighter)<br>
+*Automatic Keywords Highlighter *(https://github.com/wrzlbrmft/chrome-keywords-highlighter)<br>
