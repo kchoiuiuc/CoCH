@@ -2,7 +2,7 @@
     "name": "Chemicals of Corcern Highlighter",
     "version": "1.0",
     "description": "Highlight chemicals of corcern in makeup and skincare products",
-    "permissions": ["tabs"],
+    "permissions": ["contextMenus", "activeTab"],
     "browser_action": {
         "default_popup": "popup.html"
         },

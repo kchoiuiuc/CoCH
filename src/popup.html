@@ -14,17 +14,27 @@
                 <h3>Highlighting</h3>
                 <p>What colors should be used?</p>
                 <div><input id="colorForeground" type="color"/><label for="colorForeground"> Text color</label></div>
-                <div><input id="colorBackground" type="color"/><label for="colorBackground"> Background color</label></div>
             </div>
             <div class="column column-popup">
                 <h3>Keywords</h3>
                 <p>Default keywords are retrieved from <a href=http://www.safecosmetics.org/>Safe Cosmetics</a></p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="column column-popup">
+                <div><input id="colorBackground" type="color"/><label for="colorBackground"> Background color</label></div>
+            </div>
+            <div class="column column-popup">
                 <p>To add or remove keywords, press Edit Keywords</p>
             </div>
         </div>
-        <em>&nbsp;</em>
-        <button id="buttonSave" type="submit">Save Colors</button>
-        <button id="buttonOptions">Edit Keywords</button>
-        <button id="buttonSearch">Search</button>
+        <div class = "row">
+            <div class="column column-popup">
+                <button class="popupButton" id="buttonSave" type="submit">Save Colors</button>        
+            </div>
+            <div class="column column-popup">
+                <button class="popupButton" id="buttonOptions">Edit Keywords</button>
+            </div>
+        </div>                
     </body>
 </html>

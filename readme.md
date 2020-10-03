@@ -3,7 +3,7 @@
 Search ingredients, highlight chemicals of concern in cosmetics or skin care products and click the highlighted chemical to see the related document!
 
 ## Instruction
-In order to use, go to a website that shows ingredients of a product, click the extension icon to activate popup and click the search button. If you want to see more information about the chemical of concern, simply click the highlighted chemical to see the related documents on Safe Cometics.
+Go to a website that shows ingredients of a product, right click any empty space on the page and click the context menu "search" with the icon on the left. If you want to see more information about the chemical of concern, simply click the highlighted chemical to see the related documents on Safe Cometics.
 
 ### Screenshots
 <a href="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot1.png?raw=true" target="_blank"><img src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/screenshots/screenshot1.png?raw=true" width="200" border="0" /></a>

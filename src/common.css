@@ -71,3 +71,7 @@ button {
     flex: 50%;
     padding-left: 5px;
 }
+
+input {
+    margin-bottom: 3px;
+}

@@ -1,14 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     loadColors();
 
-    document.getElementById("buttonSearch").addEventListener("click", function() {
-        chrome.runtime.sendMessage({
-            "message": "getChemicals",
-            "remove": true
-        });
-        window.close();
-    });
-
 	document.getElementById("buttonSave").addEventListener("click", function() {
 		saveColors();
 		window.close();
