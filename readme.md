@@ -1,6 +1,6 @@
 # Chemicals of Corcern Highlighter
 <img width="100" src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png" align="right" style="padding-left: 10px" />
-Search ingredients, highlight chemicals of concern in cosmetics or skin care products and click the highlighted chemical to see the related document!
+Search ingredients and highlight possibly harmful chemicals in cosmetics or skin care products and display a link to the related documents.
 
 ## Instruction
 Go to a website that shows ingredients of a product, right click any empty space on the page and click the context menu "search" with the icon on the left. If you want to see more information about the chemical of concern, simply click the highlighted chemical to see the related documents on Safe Cometics.
