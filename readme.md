@@ -1,4 +1,5 @@
-# Chemicals of Corcern Highlighter <img width="100" src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png" align="right" style="padding-left: 10px" />
+<img width="100" src="https://github.com/gchoi17/highlight_harmful_chemicals/blob/master/src/icons/flask_128.png" align="right" style="padding-left: 10px" />
+# Chemicals of Corcern Highlighter 
 Search ingredients and highlight possibly harmful chemicals in cosmetics or skin care products and display a link to the related documents.
 
 ## Instruction
