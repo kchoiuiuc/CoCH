@@ -21,7 +21,7 @@ To change the font or background (highlight) colors, choose colors that you want
 
 ## Installation
 
-Waiting to be listed on google web store
+Install it on chrome webstore: https://chrome.google.com/webstore/detail/chemicals-of-corcern-high/imnlahcbjbljlakbilnjickboagdnpfp?hl=en&authuser=2
 
 ### Getting the Source Code
 
