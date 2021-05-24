@@ -91,7 +91,7 @@ function keywordsHighlighter(options, remove) {
 
 	addHighlights(document.body, keywords, indices, options, urls);
 }
-// Active chrome listner waiting for the user input to highlight the chemicals
+// Passive chrome listner waiting for the user input to highlight the chemicals
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	if ("returnChemicals" == request.message) {
 		if ("undefined" != typeof request.keywords && request.keywords) {
