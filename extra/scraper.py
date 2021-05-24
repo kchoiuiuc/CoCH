@@ -1,11 +1,15 @@
+# Kevin Choi
+# Scrape, parse, and format the chemicals of concern
+# selenium webdriver used for scraping
+# beatifulsoup used for parsing and formatting
+
 from bs4 import BeautifulSoup
 from selenium import webdriver 
 from selenium.webdriver.chrome.options import Options
 import re 
 import urllib
-# Kevin Choi
-# code syntax created by the document "Scraping UIUC CS faculty homepages"
 
+# output the list of items
 def write_lst(lst,file_):
     with open(file_,'w') as f:
         for l in lst[:-1]:
@@ -13,6 +17,7 @@ def write_lst(lst,file_):
             f.write(', ')
         f.write(str(lst[-1]))
 
+# output the urls of items
 def write_urls(urls,file_):
     with open(file_,'w') as f:
         for url in urls[:-1]:
@@ -24,12 +29,14 @@ def write_urls(urls,file_):
         f.write(str(urls[-1]))
         f.write("'")
 
+# initiate and return beautifulsoup object for parsing the given url
 def get_js_soup(url,driver):
     driver.get(url)
     res_html = driver.execute_script('return document.body.innerHTML')
     soup = BeautifulSoup(res_html,'html.parser') 
     return soup
 
+# scrape the urls in beautifulsoup object created by input url
 def scrape_urls(main_url,driver):
     print ('-'*20,'Scraping sub page','-'*20)
     subpage_links = []
@@ -40,6 +47,7 @@ def scrape_urls(main_url,driver):
     print ('-'*20,'Found {} sub page urls'.format(len(subpage_links)),'-'*20)
     return subpage_links
 
+# scrape the items in beautifulsoup object created by input inner url
 def scrape_chemicals(chem_urls,driver):
     i=0
     chemArray = []
@@ -55,6 +63,7 @@ def scrape_chemicals(chem_urls,driver):
         i += 1
     return chemArray
 
+# list of regex used for formatting the items
 def replace_regex(myString):
     pattern1 = re.compile(r'(\s*<strong>.*?</strong>\s*)|i\.e\.\s|</?em>|b?\'|\.?</?p>|(\\x.{2})|\\x93eth|(\s*<sup>.*?</sup>\s*)|\.\sNote:.*|\(refined and safe for use\)', re.I)
     myString = re.sub(r',$', '', myString)
@@ -69,6 +78,7 @@ def replace_regex(myString):
     myString = re.sub(r'([a-z,A-Z]),([a-z,A-Z])|([a-z,A-Z])\.\s?([a-z,A-Z])', r'\1, \2', myString)
     return myString
 
+# make a list with index
 def split_and_index(myString):
     chems = []
     chemicals = re.split(', ', myString)
